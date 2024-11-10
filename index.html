@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="fixed z-[99] h-[10vh] w-[100%] flex justify-evenly Gradient">
+      <div class="punkImage"></div>
+      <div class="tabs">
+        <ul
+          class="flex space-x-6 items-center w-[65vw] justify-end h-full mr-5"
+        >
+          <li>
+            <a
+              href="#canvas"
+              class="text-[#fff] hover:text-neon-pink transition duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pageTitel"
+              class="text-[#fff] hover:text-neon-pink transition duration-300"
+              >Characters</a
+            >
+          </li>
+          <li>
+            <a
+              href="#panel3post"
+              class="text-[#fff] hover:text-neon-pink transition duration-300"
+              >News</a
+            >
+          </li>
+          <li>
+            <a
+              href="#page2Top"
+              class="text-[#fff] hover:text-neon-pink transition duration-300"
+              >Community</a
+            >
+          </li>
+          <!-- <li>
+            <a
+              href="#"
+              class="text-[#fff] hover:text-neon-pink transition duration-300"
+              >Shop</a
+            >
+          </li> -->
+        </ul>
+      </div>
+      <!-- <img class="w-[200px] h-[18vh] mix-blend-lighten filter saturate-150 contrast-125" src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" alt="Cyberpunk Logo" srcset=""> -->
+    </nav>
+    <img
+      class="w-3/4 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 mix-blend-lighten filter saturate-150 contrast-125"
+      src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b"
+      alt="Cyberpunk Logo"
+      srcset=""
+    />
+    <div
+      class="glow absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-1] w-[50vh] h-[50vh] pointer-events-none"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-500 opacity-20 blur-3xl"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-500 opacity-20 blur-3xl"
+      ></div>
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <div class="page w-[100vw] flex justify-evenly align-center">
+      <div class="round flex justify-evenly align-center">
+        <div id="pageTitel" class="pageTitel">
+          <div class="logoTitel">Characters</div>
+          <div class="titelLine"></div>
+        </div>
+        <div class="glow absolute z-[0] w-[70vw] h-[60vh] pointer-events-none">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-500 opacity-20 blur-3xl"
+          ></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-500 opacity-20 blur-3xl"
+          ></div>
+        </div>
+        <div class="trap">
+          <div class="trapezoid1 flex flex-col justify-between">
+            <div class=""></div>
+            <div class="h-[20vh] w-[100%] p-[4vh]">
+              <h3 class="text-[yellow] text-xl">Rank</h3>
+              <h1 class="text-[#fff] text-2xl font-semibold">Character</h1>
+            </div>
+          </div>
+          <div class="trapezoid2 flex flex-col justify-between">
+            <div class=""></div>
+            <div class="h-[20vh] w-[100%] p-[4vh]">
+              <h3 class="text-[yellow] text-xl">Rank</h3>
+              <h1 class="text-[#fff] text-2xl font-semibold">Character</h1>
+            </div>
+          </div>
+          <div class="trapezoid3 flex flex-col justify-between">
+            <div class=""></div>
+            <div class="h-[20vh] w-[100%] p-[4vh]">
+              <h3 class="text-[yellow] text-xl">Rank</h3>
+              <h1 class="text-[#fff] text-2xl font-semibold">Character</h1>
+            </div>
+          </div>
+        </div>
+        <div class="borderLine"></div>
+      </div>
+
+      <div class="panel2">
+        <div class="panel2bond bond1"></div>
+        <div class="panel2bond bond2"></div>
+        <div class="panel2bond bond3">
+          <div class="bond3holder">
+            <h1>Welcome to the dark future</h1>
+            <h3>Get the Ultimate Cyberpunk 2077 Experience</h3>
+            <p>
+              Immerse yourself in the Cyberpunk universe, from the original
+              storyline of Cyberpunk 2077 and its gripping spy-thriller
+              expansion Phantom Liberty to the award-winning anime series
+              Cyberpunk: Edgerunners — there are countless stories to discover
+              in the deadly megalopolis of Night City.
+            </p>
+            <div class="panel2btn">Learn more</div>
+          </div>
+
+          <!-- <div class="panel2base">साइबरपंक</div> -->
+        </div>
+        <img src="./cyberpunk style.webp" alt="" />
+      </div>
+      <div class="round">
+        <div id="page2Top" class="page2Top w-full h-[16vh] flex justify-between align-center">
+          <div class="h-full w-[20vw] bg-[#7700e6]">Ext</div>
+          <div class="pi2" id="pi2"></div>
+          <div class="w-[2vw] name">/</div>
+          <div class="w-[20vw] name">Harsh</div>
+          <div class="h-full w-[15vw] bg-[#7700e6]"></div>
+        </div>
+        <div class="h-[60vh] w-[22vw] rounded-[2.5vw] border card1">
+          <div class="bar"><h6>Human</h6></div>
+          <div class="infoBar">Harsh</div>
+        </div>
+      </div>
+      <div id="panel3post" class="panel3post">
+        <div class="postPlate1">titel or heading of main content</div>
+        <div class="postPlate2">
+          <div class="postPlate2img">
+            <img src="./instagram  retrofuturistic.webp" alt="" />
+          </div>
+          <div class="postPlate2text">
+            <div class="postPlate2textDis">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              obcaecati esse eos, laborum molestias ipsam dicta beatae in
+              maxime, autem quos exercitationem perspiciatis quidem expedita
+              consequatur saepe, ratione rem dolore.Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam obcaecati esse eos, laborum
+              molestias ipsam dicta beatae in maxime, autem quos exercitationem
+              perspiciatis quidem expedita consequatur saepe, ratione rem
+              dolore.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam obcaecati esse eos, laborum molestias ipsam dicta beatae
+              in maxime, autem quos exercitationem perspiciatis quidem expedita
+              consequatur saepe, ratione rem dolore.
+            </div>
+            <div class="postPlate2textlink">
+              <a href="">Show more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[100vh] w-full flex flex-col">
+        <div class="footertop h-[50%] w-[100%]"></div>
+        <div class="h-[50%] w-[100%] footerBase">
+          <div class="footerBaseCover">
+            <div class="footerBaseCoverText">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Expedita, nesciunt. Suscipit voluptatum at cumque reprehenderit
+              consectetur Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Animi mollitia
+            </div>
+            <div class="footerBaseCoverLogo">
+              <div class="footerBaseCoverLogoImage"></div>
+              <div class="w-[2vw] name">/</div>
+              <div class="w-[20vw] name">Harsh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>

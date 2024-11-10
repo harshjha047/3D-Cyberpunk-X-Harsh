@@ -1,0 +1,421 @@
+@font-face {
+  font-family: Blender-Pro-Book;
+  src: url(./Blender-Pro-Book/Blender-Pro-Book.otf);
+}
+@font-face {
+  font-family: punk;
+  src: url(./public/CyberwayRiders-lg97d.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Blender-Pro-Book, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgb(0, 0, 0); 
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); 
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+.punkImage {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Cyberpunk_2077_logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: saturate(150%) contrast(125%);
+  width: 200px;
+  height: 7vh;
+  mix-blend-mode: lighten;
+}
+.page {
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.round {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 10vh;
+}
+.pageTitel {
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  /* border: 1px solid #fff; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logoTitel {
+  height: 100%;
+  width: 20vw;
+  font-family: punk;
+  /* border: 1px solid #fff; */
+  font-size: 10vh;
+  line-height: 1;
+}
+.titelLine {
+  height: 1px;
+  width: 60vw;
+  background-color: #fff;
+}
+.borderLine {
+  height: 25vh;
+  width: 80vw;
+  border-bottom: 1px solid #fff;
+  /* background-color: #fff; */
+}
+.trap {
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #7700e6; */
+}
+
+.trapezoid3 {
+  width: 22vw;
+  height: 70vh;
+  background: rgb(255, 255, 255);
+  clip-path: polygon(0% 0%, 100% 2%, 95% 95%, 0 100%);
+  background: url("https://img.freepik.com/free-photo/cyberpunk-city-street-night-with-neon-lights-futuristic-aesthetic_23-2151488745.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(120%) saturate(120%);
+}
+.trapezoid1 {
+  width: 22vw;
+  height: 66vh;
+  background: rgb(255, 255, 255);
+  margin-right: -6vw;
+  clip-path: polygon(5% 4%, 100% 0%, 75% 100%, 0 97%);
+  background: url("https://techwearstorm.com/cdn/shop/files/cyberpunk-style-techwearstorm-8.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(120%) saturate(120%);
+}
+.trapezoid2 {
+  width: 22vw;
+  height: 70vh;
+  background: rgb(255, 255, 255);
+  clip-path: polygon(30% 5%, 100% 0%, 100% 100%, 0 97%);
+  background: url("https://img.redbull.com/images/c_crop,x_1533,y_0,h_4035,w_3228/c_fill,w_450,h_600/q_auto:low,f_auto/redbullcom/2018/10/17/c8944b85-004a-41dc-a373-d0dbfec2d06d/cyberpunk-2077-science-fiction-dystopia");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(120%) saturate(120%);
+}
+.pi2 {
+  width: 20vw;
+  height: 100%;
+  background: url("https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: saturate(150%) contrast(125%);
+}
+.page2Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-size: 4vw;
+  font-family: punk;
+  line-height: 0%;
+  /* border: 1px solid #fff; */
+}
+.card1 {
+  /* background: linear-gradient(to top,#fff,#fff); */
+  background: url("./public/Screenshot_20241021-224925_2-removebg-preview.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.bar {
+  background: linear-gradient(to top, #00949e 30%, rgb(93, 0, 180) 70%);
+  /* background-color: blueviolet; */
+  height: 99%;
+  width: 25%;
+  border-bottom-left-radius: 50vh;
+  border-bottom-right-radius: 50vh;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h6 {
+  rotate: 90deg;
+  font-size: 9vh;
+  line-height: 0%;
+}
+.infoBar {
+  color: rgb(0, 0, 0);
+  font-size: 5vh;
+  height: 20%;
+  width: 100%;
+  /* border: 1px solid #fff; */
+  line-height: 0;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel2 {
+  min-height: 300vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  /* font-size: 2rem; */
+  text-align: center;
+  position: relative;
+  justify-content: space-between;
+}
+.panel2 img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: exclusion;
+  filter: saturate(150%);
+  /* filter: opacity(150%); */
+  filter: contrast(120%);
+}
+
+.panel2bond {
+  height: 100vh;
+  width: 100%;
+
+  /* border: 1px solid #fff; */
+}
+.bond1 {
+  background: linear-gradient(to top, #ffffff00, #000);
+}
+.bond3 {
+  background: linear-gradient(to top, #000000, #00000000);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.bond3 h1 {
+  font-size: 7.4vh;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.bond3 h3 {
+  font-size: 4.6vh;
+  text-transform: uppercase;
+}
+.bond3 p {
+  font-size: 2.82vh;
+  width: 65vw;
+}
+.panel2btn {
+  align-items: center;
+  border-style: solid;
+  border-width: 0 20px;
+  cursor: pointer;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  min-width: 40vw;
+  text-transform: uppercase;
+  font-size: 3vh;
+  font-weight: 500;
+  border-image: url(https://www.cyberpunk.net/build/images/cp-btn-cyan-1867afd5.svg)
+    0 20 fill;
+}
+.panel2base {
+  width: 55vw;
+  height: 20vh;
+  border: 1px solid #00f0ff;
+  position: absolute;
+  bottom: -10vh;
+  border-radius: 4vh;
+  padding: 2vh;
+  background: url("./instagram\ \ retrofuturistic.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  color: yellow;
+  z-index: +1;
+}
+.bond3holder {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.panel3post {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.postPlate1 {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 7.5vh;
+  text-transform: capitalize;
+  padding-left: 3vw;
+}
+.postPlate2 {
+  height: 40vh;
+  width: 100%;
+  border-top: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.postPlate2img {
+  height: 33vh;
+  width: 28vw;
+  border-radius: 2vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+.postPlate2img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.postPlate2text {
+  height: 33vh;
+  width: 61vw;
+}
+.postPlate2textDis {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.postPlate2textlink {
+  height: 7vh;
+  width: 100%;
+  display: flex;
+}
+.postPlate2textlink a {
+  color: #002fff;
+  text-decoration: none;
+  font-size: 3vh;
+}
+.footertop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./public/Cyberpunk_LogoSting_TerritoryStudio_001.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: hard-light;
+  color: #fff;
+  font-size: 2vh;
+  font-weight: 800;
+}
+.footerBase {
+  background: url("./public/Footerimg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* mix-blend-mode: darken; */
+}
+.footerBaseCover {
+  height: 90%;
+  width: 85%;
+  border: 1px solid #fff;
+  border-top-left-radius: 15vh;
+  border-top-right-radius: 15vh;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footerBaseCoverText {
+  height: 20vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  /* border: 1px solid #fff; */
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2.7vh;
+  font-weight: 500;
+}
+.footerBaseCoverLogo {
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+  /* border: 1px solid #fff; */
+}
+.footerBaseCoverLogoImage {
+  width: 200px;
+  height: 7vh;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Cyberpunk_2077_logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
