@@ -115,3 +115,50 @@ function animate() {
   composer.render();
 }
 animate();
+let svgPath = 'M 10 100 Q 600 100 1190 100'
+let svgFinelPath = 'M 10 100 Q 600 100 1190 100'
+let dhaga = document.querySelector('.dhaga');
+ dhaga.addEventListener('mousemove',(dets)=>{
+  console.log(dets)
+    let svgPath = `M 10 100 Q ${dets.x} ${dets.y} 1190 100`;
+    gsap.to('svg path',{
+        attr:{d: svgPath},
+        duration:0.3,
+        ease:"power3.out"
+    })
+ })
+ dhaga.addEventListener('mouseleave',(dets)=>{
+    gsap.to('svg path',{
+        attr:{d:svgFinelPath},
+        duration:2,
+        ease:"elastic.out(1,0.2)"
+    })
+ })
+
+ let cursor = document.querySelector('.cursor');
+let panel2 = document.querySelector('.panel2');
+// let image = document.querySelector('.panel2 img');
+
+ panel2.addEventListener('mousemove',function(dets){
+    gsap.to(cursor,{
+      x: dets.x - 20,
+      y: dets.y - 20,
+        duration:4.5,
+        delay:0.1,
+        ease: "elastic.out(1.2,0.1)",
+    })
+ })
+ panel2.addEventListener('mouseenter',()=>{
+    gsap.to(cursor,{
+        duration:0.5,
+        opacity:1,
+        scale:1,
+    })
+ })
+ panel2.addEventListener('mouseleave',()=>{
+    gsap.to(cursor,{
+        duration:0.5,
+        opacity:0,
+        scale:0,
+    })
+ })

@@ -110,6 +110,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-position: center;
   background-repeat: no-repeat;
   filter: contrast(120%) saturate(120%);
+  transition: 0.3s;
 }
 .trapezoid1 {
   width: 22vw;
@@ -122,6 +123,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-position: center;
   background-repeat: no-repeat;
   filter: contrast(120%) saturate(120%);
+  transition: 0.3s;
 }
 .trapezoid2 {
   width: 22vw;
@@ -133,6 +135,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-position: center;
   background-repeat: no-repeat;
   filter: contrast(120%) saturate(120%);
+  transition: 0.3s;
 }
 .pi2 {
   width: 20vw;
@@ -142,6 +145,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-repeat: no-repeat;
   background-size: cover;
   filter: saturate(150%) contrast(125%);
+  
 }
 .page2Top {
   display: flex;
@@ -213,6 +217,10 @@ h6 {
   position: absolute;
   z-index: -1;
   mix-blend-mode: exclusion;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   filter: saturate(150%);
   /* filter: opacity(150%); */
   filter: contrast(120%);
@@ -418,4 +426,37 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 99;
+}
+
+.trapezoid1:hover,.trapezoid2:hover,.trapezoid3:hover{
+  scale:1.1 ;
+  cursor: pointer;
+}
+.dhaga{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+path{
+  background-color: aliceblue;
+}
+.cursor{
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  opacity: 0;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  scale: 0;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff00;
+  z-index: 99;
+  position: absolute;
+  z-index: 99;
+  mix-blend-mode: difference;
 }
